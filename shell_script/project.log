@@ -1,0 +1,9 @@
+2025-05-19 09:31:04 [INFO ] startup: service=web, pid=1324
+2025-05-19 09:31:05 [DEBUG] db-connect: host=db01, user=app
+2025-05-19 09:31:07 [WARN ] tnbl: high latency detected (265 ms) on API /v1/orders
+2025-05-19 09:31:09 [INFO ] cache-warm: keys=120
+2025-05-19 09:31:11 [ERROR] tnbl: timeout while calling payment-gateway txn-id=PG158933
+2025-05-19 09:31:12 [INFO ] health-check: upstream=auth, status=200
+2025-05-19 09:31:15 [DEBUG] metrics-push: target=Prometheus, samples=42
+2025-05-19 09:31:18 [WARN ] tnbl: retrying connection to supplier-api attempt=2
+2025-05-19 09:31:22 [INFO ] shutdown: reason=SIGTERM, uptime=00:00:18
