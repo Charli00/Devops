@@ -22,7 +22,7 @@ aws iam list-users
 ls -lrht ;ps -ef > new.log
 
 # rm new.log  
-# rm aws.log
+rm aws.log
 
 
 
