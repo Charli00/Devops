@@ -1,5 +1,5 @@
 #!/bin/bash
-
+$o
 ########################Author####################
 
 #Here are learning about the shell script soft and hard link
