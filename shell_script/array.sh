@@ -12,3 +12,14 @@ done
 
 
 # diff <(ls shell_script/) <(ls Shell_project/) proccess subsitution
+
+# awk '$5+0 > 30 {print $1, $5}' #Check the diskspace above 80%
+
+
+awk 'BEGIN {
+  for (i = 0; i < ARGC; i++) {
+    print "Argument", i, ":", ARGV[i]
+  }
+}'
+
+
