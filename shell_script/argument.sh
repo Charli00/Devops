@@ -1,17 +1,22 @@
 #!/bin/bash
 
 # Check if exactly one argument is passed
-if [[ $# -ne 1 ]]; then
-    echo "Please enter the value"
-    echo "Enter the sh file after which it needs to be executed:"
-    read -p "Enter the file name: " filename
-    echo "You entered: $filename"
+if [[ $# == 0 ]]; then
+    echo "Usage: $0 <script_name.sh>"
     exit 1
 fi
 
-# If the correct number of arguments is passed
+read -p "Enter the file name: " filename
+
+# Compare the input with the argument
+while [[ "$filename" != "$1" ]]; do
+    echo "Filename does not match argument. Please try again."
+    read -p "Enter the file name: " filename
+done
+
+# If matched
+echo "Filename matched: $filename"
 echo "Argument passed: $1"
-echo "PID OF THE SCRIPT: $$"
+echo "PID of the script: $$"
 echo -e "\nNumber of arguments passed: $#"
 echo -e "\nName of the script: $0"
-
