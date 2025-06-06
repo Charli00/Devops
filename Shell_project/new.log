@@ -17,3 +17,9 @@ root        2008       0  0 10:15 ?        00:00:00 /bin/sh
 codespa+    9787       6  0 10:30 ?        00:00:00 sleep 1
 codespa+    9789    1515  0 10:30 pts/1    00:00:00 /bin/bash ./List_aws_resource.sh
 codespa+    9794    9789  0 10:30 pts/1    00:00:00 ps -ef
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 869f394c8062009aeb83bc8937dc573a26a640ad

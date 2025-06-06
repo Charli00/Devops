@@ -1,0 +1,15 @@
+--2025-05-31 08:57:46--  https://www.google.com/imgres?q=fruits
+Resolving www.google.com (www.google.com)... 142.250.192.68, 2404:6800:4009:81e::2004
+Connecting to www.google.com (www.google.com)|142.250.192.68|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://www.google.com/imghp [following]
+--2025-05-31 08:57:46--  https://www.google.com/imghp
+Reusing existing connection to www.google.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘imgres?q=fruits’
+
+imgres?q=fruits                             [<=>                                                                             ]       0  --.-KB/s               imgres?q=fruits                             [ <=>                                                                            ]  16.32K  --.-KB/s    in 0.05s   
+
+2025-05-31 08:57:46 (362 KB/s) - ‘imgres?q=fruits’ saved [16707]
+
