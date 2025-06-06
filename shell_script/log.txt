@@ -1,0 +1,22 @@
+Unix 323
+
+/This is linux
+
+cut -d "," -f 2 file.text it prints , after the second column
+101,ERROR,Database not found
+102,INFO,User login success
+103,WARN,Low disk space
+104,ERROR,Connection timeout
+
+sort commnad
+
+oranage
+apple
+pineapple
+banana
+
+fileName="log.txt"
+
+while read line; do
+  echo "Line: $line"
+done < "$fileName"
