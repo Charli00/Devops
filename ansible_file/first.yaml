@@ -8,6 +8,6 @@
       name: nginx
       state: present
   - name: start nginx
-    services:
+    service:
       state: present
       enabled: true
