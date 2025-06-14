@@ -1,0 +1,11 @@
+---
+- name: create a file /home/peniel/ansible.txt on all managed node with permission 0644
+  hosts: all
+  become: false
+
+  tasks:
+    - name: Create ansible.txt file
+      ansible.builtin.file: 
+        path: /home/peniel/ansible.txt
+        state: touch
+        mode: '0744'
