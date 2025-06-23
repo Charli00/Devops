@@ -1,11 +1,17 @@
 ---
-- name: create a file /home/peniel/ansible.txt on all managed node with permission 0644
+- name: Create a file and add custom failure condition
   hosts: all
   become: false
+  gather_facts: false
 
   tasks:
-    - name: Create ansible.txt file
-      ansible.builtin.file: 
-        path: /home/peniel/ansible.txt
-        state: touch
-        mode: '0744'
+  # - name: Create /home/peniel/ansible.txt with permission 0744
+  #   ansible.builtin.file:
+  #     path: /home/peniel/ansible.txt
+  #     state: touch
+  #     mode: '0744'
+
+  - name: Custom failure condition - check if 'Charles' is in /etc/hosts
+    shell: cat /etc/h
+    register: result
+    failed_when: "'no such file' not in result.stderr"
