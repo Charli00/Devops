@@ -13,10 +13,16 @@
 
 # Else → File doesn't exist.
 
-read -p "Enter the file name : " filename
+# read -p "Enter the file name : " filename
 
-if [ -e $filename ];then
-  echo "files exists"
-  else 
-  echo "Not exists"
+if [[ $# == 0 ]]; then
+  echo "Usage pass the argument of file: $0 file.txt"
+  exit 1
+fi
+# Check if file exists
+if [[ -f "$1" ]]; then
+  echo "File exists: $1"
+  # echo "$@" ---contains all arguments as a list
+else
+  echo "File not exists: $1"
 fi
