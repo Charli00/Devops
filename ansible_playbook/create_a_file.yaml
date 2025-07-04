@@ -5,12 +5,6 @@
   gather_facts: false
 
   tasks:
-  # - name: Create /home/peniel/ansible.txt with permission 0744
-  #   ansible.builtin.file:
-  #     path: /home/peniel/ansible.txt
-  #     state: touch
-  #     mode: '0744'
-
   - name: Custom failure condition - check if 'Charles' is in /etc/hosts
     shell: cat /etc/h
     register: result

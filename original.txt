@@ -1,11 +1,1 @@
-<<<<<<< HEAD
-SOFT AND HARD LIN
-isohadfa
-sdofapioshda
-dsihduw
-K
-=======
--rw-rw-rw- 1 codespace root 1196 May 22 13:21 ./github_api.sh
--rwxrwxrwx 1 codespace root  513 May 24 14:37 ./soft_hard_link.sh
--rwxrwxrwx 1 codespace root  513 May 24 14:37 ./hello.sh
->>>>>>> 869f394c8062009aeb83bc8937dc573a26a640ad
+SOFT AND HARD LINK
