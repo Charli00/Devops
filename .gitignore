@@ -1,5 +1,7 @@
 git rm --cached inventory.ini
 
+
+
 <<<<<<< HEAD
 git rm --cached ansible_playbook/inventory
 
