@@ -1,0 +1,19 @@
+git rm --cached inventory.ini
+
+
+
+<<<<<<< HEAD
+git rm --cached ansible_playbook/inventory
+
+
+# git rm --cached inventory
+
+
+
+/ansible_playbook/inventory.ini
+
+/ansible_playbook/inventory
+=======
+inventory.ini
+>>>>>>> 785170d (Remove inventory.ini from version control)
+

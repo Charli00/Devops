@@ -1,0 +1,11 @@
+---
+- name: Create a file and add custom failure condition
+  hosts: all
+  become: false
+  gather_facts: false
+
+  tasks:
+  - name: Custom failure condition - check if 'Charles' is in /etc/hosts
+    shell: cat /etc/h
+    register: result
+    failed_when: "'no such file' not in result.stderr"
