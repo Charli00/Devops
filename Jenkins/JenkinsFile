@@ -1,0 +1,20 @@
+pipeline{
+    agent any
+    stages{
+        stage('Check out'){
+            steps{
+                git "https://github.com/Charli00/Devops"
+
+            }
+
+        }
+        stage('Test'){
+            steps{
+                sh "Echo Testing"
+            }
+        }
+
+
+    }
+
+}
