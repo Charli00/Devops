@@ -1,20 +1,38 @@
-pipeline{
+pipeline {
     agent any
-    stages{
-        stage('Check out'){
-            steps{
-                git "https://github.com/Charli00/Devops"
 
-            }
-
-        }
-        stage('Test'){
-            steps{
-                sh "echo Testing"
+    stages {
+        stage('Checkout SCM') {
+            steps {
+                git 'https://github.com/Charli00/Devops.git'
             }
         }
 
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                sh 'echo Build step executed'
+            }
+        }
 
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                sh 'echo Test step executed'   // ✅ Use lowercase 'echo'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                sh 'echo Deploy step executed'
+            }
+        }
     }
 
+    post {
+        always {
+            echo 'Pipeline execution finished'
+        }
+    }
 }
