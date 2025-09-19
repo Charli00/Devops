@@ -1,2 +1,2 @@
 print("Hello Jenkins")
-peinr("hWLLO")
+print("hWLLO")
