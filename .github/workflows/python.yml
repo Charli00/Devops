@@ -1,1 +1,16 @@
-name: Run Python script
+name : Run Python script
+
+on: [push]
+jobs:
+  run-script: #jobname
+    runs-on: ubuntu-latest  #runner
+
+    steps:
+      - name: pull the repository
+        uses: action/checkout@v3
+
+      - name: run Python code
+        run: python3 /workspaces/Devops/.github/workflows/Test.py
+        
+          
+  
