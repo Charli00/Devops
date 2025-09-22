@@ -7,8 +7,8 @@ jobs:
 
     steps:
       - name: pull the repository
-        uses: actions/checkout@v3
-
+        uses: actions/checkout@v3 
+        
       - name: run Python code
         run: python3 Test.py
 
