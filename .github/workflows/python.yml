@@ -7,10 +7,10 @@ jobs:
 
     steps:
       - name: pull the repository
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
 
       - name: run Python code
-        run: python3 /workspaces/Devops/.github/workflows/Test.py
-        
+        run: python3 Test.py
+
           
   
