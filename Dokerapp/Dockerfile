@@ -1,12 +1,8 @@
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get install -y python3
+FROM python:3.11
 
 WORKDIR /app
 
+# Copy everything from current folder into /app
+COPY . /app/
 
-COPY app.py /app_01
-
-CMD ["python3","app.py"]
-
-#docker build -t myapp:1.0 .
+CMD ["python3", "app.py"]
