@@ -1,0 +1,6 @@
+-rw-rw-rw- 1 codespace root 1196 May 22 13:21 ./github_api.sh
+-rwxrwxrwx 1 codespace root  513 May 24 14:37 ./soft_hard_link.sh
+-rwxrwxrwx 1 codespace root  513 May 24 14:37 ./hello.sh
+-rwxrwxrwx 1 codespace root  513 May 24 14:37 ./hello.sh
+
+SOFT AND HARD LINK
