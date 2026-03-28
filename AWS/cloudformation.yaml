@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "My first EC2 instance"
+
+Parameters:
+  EnvType:
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - t3.micro
+
+Resources:
+  MyEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref EnvType
+      ImageId: ami-0c55b159cbfafe1f0   # Example Amazon Linux AMI (change as per region)
