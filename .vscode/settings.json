@@ -1,5 +1,23 @@
 {
     "python-envs.defaultEnvManager": "ms-python.python:system",
     "python-envs.pythonProjects": [],
-    "markdown.validate.enabled": true
+    "markdown.validate.enabled": true,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "127.0.0.1",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "mysql_local",
+            "database": "dev",
+            "username": "root",
+            "password": "Root@123",
+            "connectionTimeout": 30
+        }
+    ]
 }
