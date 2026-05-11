@@ -1,0 +1,36 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('first one') {
+            steps {
+                echo "first stage"
+            }
+        }
+
+        stage('second one') {
+            steps {
+                sh "ls /var/jenkins_home/github"
+            }
+
+            post {
+              
+
+                success {
+                    echo "second stage got executed successfully"
+                }
+
+                failure {
+                    echo "second stage got failed"
+                }
+            }
+        }
+
+        stage('third one') {
+            steps {
+                echo "third stage"
+            }
+        }
+    }
+}
