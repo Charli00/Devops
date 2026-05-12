@@ -8,7 +8,10 @@ pipeline{
         }
         stage('stage2'){
             steps{
-                echo "second stage"
+                catchError(buildResult:'SUCCESS',stageResult:'FAILURE'){
+                    sh 'ls -l /home/jenkins/abc'
+
+                }
                 
             }
             post{

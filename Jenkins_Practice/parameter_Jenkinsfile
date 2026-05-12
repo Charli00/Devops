@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'NAME', defaultValue: 'Jenkins', description: 'Enter your name')
+        choice(name: 'ENV', choices: ['dev', 'qa', 'prod'], description: 'Enter your choice')
+        booleanParam(name: 'DEPLOY', defaultValue: false, description: 'Deploy or not')
+    }
+
+    stages {
+        stage('stage1') {
+            steps {
+                echo "First stage"
+                echo "Name: ${params.NAME}"
+                echo "Environment: ${params.ENV}"
+
+                script {
+                    if (params.DEPLOY) {
+                        echo "Deployment is selected"
+                    } else {
+                        echo "Deployment is not selected"
+                    }
+                }
+            }
+        }
+    }
+}
